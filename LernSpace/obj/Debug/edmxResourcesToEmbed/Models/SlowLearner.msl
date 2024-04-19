@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SlowlernerDbModelStoreContainer" CdmEntityContainer="SlowlernerDbEntities">
+    <EntitySetMapping Name="Appointment">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointment">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="testId" ColumnName="testId" />
+          <ScalarProperty Name="pracId" ColumnName="pracId" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="appointmentDate" ColumnName="appointmentDate" />
+          <ScalarProperty Name="nextAppointDate" ColumnName="nextAppointDate" />
+          <ScalarProperty Name="feedback" ColumnName="feedback" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collection">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Collection">
+        <MappingFragment StoreEntitySet="Collection">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uText" ColumnName="uText" />
+          <ScalarProperty Name="eText" ColumnName="eText" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="picPath" ColumnName="picPath" />
+          <ScalarProperty Name="C_group" ColumnName="_group" />
+          <ScalarProperty Name="audioPath" ColumnName="audioPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patient">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Patient">
+        <MappingFragment StoreEntitySet="Patient">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="stage" ColumnName="stage" />
+          <ScalarProperty Name="firstTime" ColumnName="firstTime" />
+          <ScalarProperty Name="profPicPath" ColumnName="profPicPath" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PatientTestCollectionFeedback">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PatientTestCollectionFeedback">
+        <MappingFragment StoreEntitySet="PatientTestCollectionFeedback">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="testCollectionId" ColumnName="testCollectionId" />
+          <ScalarProperty Name="collectionId" ColumnName="collectionId" />
+          <ScalarProperty Name="feedback" ColumnName="feedback" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="relation" ColumnName="relation" />
+          <ScalarProperty Name="audioPath" ColumnName="audioPath" />
+          <ScalarProperty Name="addBy" ColumnName="addBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonIdentification">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonIdentification">
+        <MappingFragment StoreEntitySet="PersonIdentification">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="persontestid" ColumnName="persontestid" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonIdentificationFeedback">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonIdentificationFeedback">
+        <MappingFragment StoreEntitySet="PersonIdentificationFeedback">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="personTestCollectionId" ColumnName="personTestCollectionId" />
+          <ScalarProperty Name="personId" ColumnName="personId" />
+          <ScalarProperty Name="feedback" ColumnName="feedback" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonPicture">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonPicture">
+        <MappingFragment StoreEntitySet="PersonPicture">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="imgPath" ColumnName="imgPath" />
+          <ScalarProperty Name="personid" ColumnName="personid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonPracticCollection">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonPracticCollection">
+        <MappingFragment StoreEntitySet="PersonPracticCollection">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="personId" ColumnName="personId" />
+          <ScalarProperty Name="personPractice" ColumnName="personPractice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonPractice">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonPractice">
+        <MappingFragment StoreEntitySet="PersonPractice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="title" ColumnName="title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonTest">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonTest">
+        <MappingFragment StoreEntitySet="PersonTest">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonTestCollection">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PersonTestCollection">
+        <MappingFragment StoreEntitySet="PersonTestCollection">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="personId" ColumnName="personId" />
+          <ScalarProperty Name="personTestId" ColumnName="personTestId" />
+          <ScalarProperty Name="op1" ColumnName="op1" />
+          <ScalarProperty Name="op2" ColumnName="op2" />
+          <ScalarProperty Name="op3" ColumnName="op3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Practice">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Practice">
+        <MappingFragment StoreEntitySet="Practice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stage" ColumnName="stage" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="createBy" ColumnName="createBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PracticeCollection">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.PracticeCollection">
+        <MappingFragment StoreEntitySet="PracticeCollection">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="collectId" ColumnName="collectId" />
+          <ScalarProperty Name="pracId" ColumnName="pracId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Test">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.Test">
+        <MappingFragment StoreEntitySet="Test">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stage" ColumnName="stage" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="createBy" ColumnName="createBy" />
+          <ScalarProperty Name="stageIdentfy" ColumnName="stageIdentfy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestCollection">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.TestCollection">
+        <MappingFragment StoreEntitySet="TestCollection">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="collectId" ColumnName="collectId" />
+          <ScalarProperty Name="testId" ColumnName="testId" />
+          <ScalarProperty Name="op1" ColumnName="op1" />
+          <ScalarProperty Name="op2" ColumnName="op2" />
+          <ScalarProperty Name="op3" ColumnName="op3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="profPicPath" ColumnName="profPicPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPatient">
+      <EntityTypeMapping TypeName="SlowlernerDbModel.UserPatient">
+        <MappingFragment StoreEntitySet="UserPatient">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
