@@ -239,7 +239,7 @@ namespace LernSpace.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, "error ");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
             }
         }
         [HttpGet]
@@ -266,7 +266,7 @@ namespace LernSpace.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, "error ");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError,ex);
             }
         }
         [HttpGet]
